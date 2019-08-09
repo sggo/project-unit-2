@@ -1,0 +1,300 @@
+/* Universals */
+* {
+font-family: 'Muli';
+font-style: normal;
+font-weight: 400;
+src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v16/7Auwp_0qiz-afT3GLRrX.woff2) format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+
+* {
+Box-sizing: border-box;
+}
+
+*{
+margin:auto;
+}
+
+
+/* Elements */
+header{
+width: 100%;
+}
+
+body {
+text-align:center;
+}
+
+footer{
+background-color: #F8F8F8;
+}
+
+p {
+font-size: 1.25em;
+}
+
+a:hover {
+color: #6633ff;
+}
+
+li:hover{
+color: #6633ff;
+}
+
+    /* Classes */
+
+.main-panels h1 {
+font-weight: bold;
+font-size: 1.75em;
+padding-bottom: 1em;
+}
+
+.main-panels p {
+padding-bottom: 1em;
+padding-top: 1em;
+width: 80%;
+}
+
+.main-panels img {
+width:80%;
+max-width: 350px;
+padding-bottom: 30px;
+padding-top: 30px;
+}
+
+.rocket {
+width: 5%;
+}
+
+.phone {
+font-weight: bold;
+}
+.email {
+font-weight: bold;
+font-size: 1.1em;
+text-decoration: none;
+list-style-type: none;
+color: skyblue;
+}
+
+.hidden-line{
+width: 90%;
+height: 0;
+border-bottom: 1px solid lightgrey;
+background: #F8F8F8;
+}
+
+
+    /* #ids */
+#main-header-id{
+font-size: 3em;
+font-weight: bold;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+#main-nav {
+display: inline;
+font-size: 1.5em;
+}
+
+#main-nav a {
+display: inline;
+text-decoration: none;
+color: black;
+}
+
+
+#main-nav li {
+
+list-style-type: none;
+border: 4px #F8F8F8 solid;
+margin-right: 50px;
+padding-bottom: 10px;
+padding-top: 10px;
+font-size: .70em;
+background-color: white;
+font-weight: bold;
+}
+
+#Portfolio {
+padding: 55px 0px;
+font-weight: bold;
+text-decoration: underline;
+}
+
+#intro{
+width: 100%;
+padding-top: 50px;
+padding-left: 5%;
+padding-right: 5%;
+padding-bottom: 50px;
+}
+
+#Contact {
+margin-top: 50px;
+padding-top: 75px;
+padding-bottom: 40px;
+}
+
+
+#Contact h2 {
+font-weight: bold;
+padding-bottom: 25px;
+
+}
+
+#Contact p{
+padding-top: 15px;
+padding-bottom: 35px;
+max-width: 50%;
+}
+
+
+    /* Layout */
+.main-header, #intro{
+background-color: #F8F8F8;
+}
+
+#Contact{
+background-color: #F8F8F8;
+}
+
+footer {
+width: 100%
+font-size: 1.5em;
+background-color: #F8F8F8;
+padding-top: 5px;
+padding-bottom: 5px;
+position: relative;
+padding-bottom: 50px;
+padding-left: 25px;
+}
+
+footer a {
+width: 30%;
+color: black;
+list-style-type: none;
+text-decoration: none;
+font-weight: bold;
+display: inline-block;
+margin-right: auto;
+padding-top: 4px;
+}
+
+footer p {
+width: 40%;
+font-weight: bold;
+text-align: left;
+margin-right: 250px;
+padding-left: 55px;
+display: inline-block;
+margin-right: auto;
+color: black;
+}
+
+
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
+
+/*   Media Queries */
+
+@media (max-width: 768px) {
+  footer nav {
+    display: none;
+  }
+}
+
+@media  (min-width: 768px)
+{
+
+      main {
+          column-count: 2;
+      }
+
+      #main-header-id{
+
+          padding-top: 15px;
+          padding-bottom: 25px;
+          width: 100%;
+          padding-bottom: 5px;
+      }
+
+      #main-nav li {
+        display: inline-block;
+        background-color: #F8F8F8;
+        padding-top: 25px;
+      }
+
+      .hidden-line {
+          padding-bottom: 25px;
+      }
+
+      .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+      }
+
+      #intro{
+          column-count: 2;
+      }
+
+      #intro p {
+          padding-left: 25px;
+          padding-top: 45px;
+      }
+
+      .back-to-top {
+          display:none;
+      }
+
+      footer nav {
+          display: inline-block;
+          width: 55%;
+      }
+
+      li {
+          font-weight: bold;
+          padding-right: 5px;
+          padding-right: 5px;
+      }
+
+
+
+}
+
+@media  (min-width: 1024px)
+{
+
+
+    #main-header-id {
+        display: inline-block;
+        text-align: center;
+        padding-right: 150px;
+        margin-left: -175px;
+        margin-right: 150px;
+        width: 30%;
+    }
+
+    #main-nav {
+
+        text-align: center;
+        display: inline-block;
+        max-width: 50%;
+        padding-bottom: -10px;
+        margin-right: -250px;
+    }
+
+    main {
+        column-count: 3;
+    }
+
+    .intro p {
+        max-width: 40%;
+    }
+
+}
